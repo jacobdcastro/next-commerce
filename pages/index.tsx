@@ -84,6 +84,7 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div>
+      test
       <Grid>
         {featured.slice(0, 3).map(({ node }, i) => (
           <ProductCard
