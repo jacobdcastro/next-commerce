@@ -30,6 +30,7 @@ const ProductCard: FC<Props> = ({
   imgSizes,
   imgLayout = 'responsive',
 }) => {
+  console.log({ p })
   const src = p.images.edges?.[0]?.node?.urlOriginal!
   const { price } = usePrice({
     amount: p.prices?.price?.value,
